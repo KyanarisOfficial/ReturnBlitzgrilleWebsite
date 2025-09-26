@@ -34,8 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function drawRain() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    const isLightTheme = document.body.classList.contains('light');
-    const rainColor = isLightTheme ? 'rgba(100, 149, 237, ' : 'rgba(174, 194, 224, ';
+    const rainColor = 'rgba(174, 194, 224, ';
     
     raindrops.forEach(drop => {
       ctx.beginPath();
