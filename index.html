@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return Blitzgrille | Фанатские моды для Мир Танков</title>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="img/ico/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="rainCanvas"></canvas>
+  <div class="theme-toggle" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+  </div>
+  <main>
+    <h1><i class="fa-solid fa-bolt"></i> Return Blitzgrille</h1>
+    <p class="subtitle">Фанатские моды для Мир Танков. С вайбом электрических дуг</p>
+    <div class="tags">
+      <span class="tag"><i class="fa-solid fa-code-branch"></i> Поддержка клиента: 1.37.0.0</span>
+      <span class="tag"><i class="fa-solid fa-gear"></i> Совместимость: Lesta</span>
+    </div>
+    <div class="card-weather">
+      <h2>Rainy Weather <i class="fa-solid fa-cloud-bolt"></i></h2>
+      <div class="file-info">
+        Описание: данная модификация добавляет на все карты дождь<br>
+        Версия мода: 0.2.4 &nbsp;&nbsp; Обновлено: 26.09.2025 &nbsp;&nbsp; Размер: ~116 МБ
+      </div>
+      <a class="download-btn" href="#" id="downloadTrigger">
+        <i class="fa-solid fa-download"></i> СКАЧАТЬ
+      </a>
+      <div class="whats-new">
+        <h3>Что нового</h3>
+        <ul>
+          <li>Убран эффект 'Мокрого танка' с зимних и пустынных карт</li>
+          <li>Удалён установщик</li>
+        </ul>
+      </div>
+      <div class="install-guide">
+        <h3>Инструкция по установке</h3>
+        <ul>
+          <li>Скачайте файл</li>
+          <li>Скопируйте всё из файла в папку - .../Tanki/mods/1.37.0.0</li>
+          <li>Запустите игру — мод активируется автоматически</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Выберите версию мода</h3>
+      <p>C каплями или без капель на экране</p>
+      <div class="modal-buttons">
+        <a href="https://github.com/KyanarisOfficial/ReturnBlitzgrilleWebsite/releases/download/v0.2.4/RainyWeatherWithDrips.zip" class="modal-btn with-drips"> С КАПЛЯМИ </a>
+        <a href="https://github.com/KyanarisOfficial/ReturnBlitzgrilleWebsite/releases/download/v0.2.4/RainyWeatherWithoutDrips.zip" class="modal-btn without-drips"> БЕЗ КАПЕЛЬ </a>
+      </div>
+      <button class="modal-close" id="modalClose">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-disclaimer"> Return Blitzgrille не является официальным сайтом Lesta Games и никак с компанией не связан. Все используемые товарные знаки и логотипы принадлежат их законным владельцам.</div>
+      <div class="footer-contacts">
+        <div class="contact-item">
+          <i class="fa-brands fa-telegram"></i>
+          <span>Телеграм: </span>
+          <a href="https://t.me/returnblitzgrille" target="_blank">@returnblitzgrille</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="rain.js"></script>
+</body>
+</html>
