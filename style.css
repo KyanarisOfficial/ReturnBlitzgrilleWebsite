@@ -199,36 +199,6 @@ footer {
   line-height: 1.5;
 }
 
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-}
-
-.contact-item i {
-  width: 16px;
-  text-align: center;
-}
-
-.contact-item a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-item a:hover {
-  color: var(--text-primary);
-  text-decoration: underline;
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
