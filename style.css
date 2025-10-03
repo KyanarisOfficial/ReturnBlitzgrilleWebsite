@@ -1,6 +1,6 @@
 :root {
   --bg-primary: #121212;
-  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --bg-overlay: rgba(0, 0, 0, 0.25);
   --text-primary: #fff;
   --text-secondary: #bbb;
   --text-muted: #666;
@@ -69,18 +69,6 @@ h1 {
   justify-content: center;
 }
 
-h1 i {
-  color: var(--text-primary);
-  animation: flicker 2s infinite;
-}
-
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  45% { opacity: 0.4; }
-  50% { opacity: 0.1; }
-  55% { opacity: 0.8; }
-}
-
 .subtitle {
   font-size: 1rem;
   color: var(--text-secondary);
@@ -102,7 +90,6 @@ h1 i {
   padding: 6px 14px;
   font-size: 0.9rem;
   color: var(--text-primary);
-  transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
 .card-weather {
@@ -113,7 +100,6 @@ h1 i {
   text-align: left;
   max-width: 600px;
   margin: 0 auto;
-  transition: background 0.5s ease, border 0.5s ease, transform 0.3s;
 }
 
 .card-weather h2 {
@@ -301,7 +287,6 @@ footer {
   color: var(--text-muted);
   font-size: 1.2rem;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 .modal-close:hover {
